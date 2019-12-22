@@ -1,0 +1,27 @@
+package com.test.UnitTests;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class DoubleLetterTest {
+
+	public static void main(String[] args) {
+		/*
+		 * String word_1 = "raeed"; String word_3 = null; char mychar; char mychar_2; //
+		 * TODO Auto-generated method stub for (int a = 0; a < word_1.length(); a++) {
+		 * mychar = word_1.charAt(a); for (int c = 1; c < word_1.length(); c++) {
+		 * mychar_2 = word_1.charAt(c); if (mychar == mychar_2) { word_3 = word_3 + "";
+		 * } else { word_3 = word_3 + mychar; } } } System.out.println(word_3);
+		 */
+		
+		String testWord ="Treeam";
+		HashSet<String> testSet=new HashSet<String>();
+		for(int i =0; i<testWord.length();i++) {
+			testSet.add(String.valueOf(testWord.charAt(i)));
+		}
+		StringBuilder sb = new StringBuilder();
+		sb.append(testSet.toArray());
+		System.out.println(sb.toString());
+	}
+
+}

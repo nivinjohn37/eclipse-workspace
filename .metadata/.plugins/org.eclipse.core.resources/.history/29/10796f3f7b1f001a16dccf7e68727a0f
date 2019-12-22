@@ -1,0 +1,25 @@
+package com.test.UnitTests;
+
+public class DoubleLetterTest {
+
+	public static void main(String[] args) {
+		String word_1 = "reed";
+		String word_3 = null;
+		char mychar;
+		char mychar_2;
+		// TODO Auto-generated method stub
+		for (int a = 0; a < word_1.length(); a++) {
+			mychar = word_1.charAt(a);
+			for (int c = 1; c < word_1.length(); c++) {
+				mychar_2 = word_1.charAt(c);
+				if (mychar == mychar_2) {
+					word_3 = word_3 + "";
+				} else {
+					word_3 = word_3 + mychar;
+				}
+			}
+		}
+		System.out.println(word_3);
+	}
+
+}

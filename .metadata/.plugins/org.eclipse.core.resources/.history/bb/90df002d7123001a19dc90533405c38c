@@ -1,0 +1,23 @@
+package com.nivin.Telusko;
+
+import java.io.ObjectInputStream.GetField;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+		/*
+		 * Vehicle veh = (Vehicle)applicationContext.getBean("bike"); veh.drive();
+		 */
+    	Tyre ty = new Tyre();
+        System.out.println( "Hello World!" );
+    }
+}

@@ -1,0 +1,34 @@
+package com.nivin.Telusko;
+
+public class Tyre {
+	
+	public Tyre(String brand) {
+		super();
+		this.brand = brand;
+	}
+
+	private String brand;
+
+	/**
+	 * @return the brand
+	 */
+	public String getBrand() {
+		return brand;
+	}
+
+	/**
+	 * @param brand the brand to set
+	 */
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Tyre [brand=" + brand + "]";
+	}
+
+}
